@@ -7,8 +7,7 @@ import pandas as pd
 def cmd_group():
     pass
 
-@cmd_group.command("sin")
-@click.argument("number",type=int)
+@cmd_group.command()
 @click.option(
     "-n",
     "--number",
@@ -22,8 +21,7 @@ def sin(number):
     print(df)
     return
 
-@cmd_group.command("tan")
-@click.argument("number", type=int)
+@cmd_group.command()
 @click.option(
     "-n",
     "--number",

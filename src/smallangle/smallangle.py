@@ -20,6 +20,11 @@ def cmd_group():
 )
 # function that plots the results
 def sin(number):
+    """computes various values of sine and puts them in a dataframe 
+
+    Args:
+        number (int): amount of values it computes
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -35,6 +40,11 @@ def sin(number):
     show_default=True, #show default in help
 )
 def tan(number):
+    """computes various values of tangent and puts them in a dataframe
+
+    Args:
+        number (int): amount of values it computes 
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
